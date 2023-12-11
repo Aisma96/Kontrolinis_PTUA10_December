@@ -1,7 +1,9 @@
 task_list = []
 task_dict = {}
 
-# def tasks():
+def tasks():
+
+
 while True:
     print('\nOptions for to-do list:')
     print('1. Add task to a list')
@@ -28,7 +30,6 @@ while True:
         x = input('task index:')
         if x in task_list:
             print(task)
-        # print([task_in_list for task_in_list in task_list if input('task index:') in task_in_list])
     elif option == 5:
         task_dict[task] = due_date
         for key, value in list(task_dict.items()):
@@ -50,3 +51,5 @@ while True:
         break
     else:
         print('Please enter a valid option number between 1 and 7.')
+
+tasks()
